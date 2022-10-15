@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 16px;
+    --background: #F2EFEA;
+    --white: #FFFFFF;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    background-color: var(--background);
+    width: 100vw;
+}
+
+nav{
+    width: 100vw;
+}
+
+h1{
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    width: 10rem;
+    text-align: center; 
+}
+
+.spans{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    margin-top: 0.5rem;
+    width: 80%;
+}
+
+.span1{
+    color: gray;
+}
+
+.span2{
+    color: darkred;
+}
+
+.span2:hover{
+    cursor: pointer;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    padding: 1rem;
+    background-color: var(--background);
+    place-content: center;
+    width: 100vw;
+    height: auto;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid gray;
+    padding: 2rem;
+    background-color: var(--white);
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.brand{
+    border-bottom: 1px solid gray;
+    width: 80%;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+
+.colors{
+    border-bottom: 1px solid gray;
+    width: 80%;
+    padding-top: 0.5rem;
+}
+
+.model{
+    border-bottom: 1px solid gray;
+    width: 80%;
+    font-size: 1.5rem;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-top: 0.5rem;
+}
+
+.price{
+    border-bottom: 1px solid gray;
+    width: 80%;
+    padding-top: 0.5rem;
+}
+
+.stock{
+    border-bottom: 1px solid gray;
+    width: 80%;
+    padding-top: 0.5rem;
+}
+
+button{
+    margin: 1rem auto;
+    color: darkred;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px){
+    main{
+        display: grid;
+        grid-template-columns: 100vw;
+        row-gap: 1.5rem;
+        padding: 1rem;
+       height: auto;
+        
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid gray;
+        padding: 2rem;
+        background-color: var(--white);
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
